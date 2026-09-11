@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Sarittawat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="video-background">
+        <iframe src="https://www.youtube.com/embed/rTtMtX2B9ps?autoplay=1&mute=1&loop=1&playlist=rTtMtX2B9ps&controls=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="screen-fire-border"></div>
+
+    <header>
+        <nav>
+            <div class="logo">PANGPOND<span>.FIRE</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html">การศึกษา</a></li>
+                <li><a href="hobby.html">งานอดิเรก</a></li>
+                <li><a href="contact.html" class="active">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h2 class="section-title">Contact Me <span>ช่องทางการติดต่อ</span></h2>
+            
+            <div class="contact-container">
+                <div class="contact-text card">
+                    <div class="lava-drip"></div>
+                    <h3>สามารถติดต่อฉันได้ที่</h3>
+                    <p>หากมีข้อเสนอแนะ แลกเปลี่ยนความรู้ หรือพูดคุยเรื่องเทคโนโลยี สามารถติดต่อปังปอนด์ได้ตามช่องทางด้านขวามือเลยครับ พร้อมตอบเสมอ!</p>
+                </div>
+                
+                <div class="contact-cards">
+                    <div class="contact-item card">
+                        <div class="lava-drip"></div>
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-info">
+                            <h4>Email</h4>
+                            <p>22834@chomthong.ac.th</p>
+                        </div>
+                    </div>
+                    <div class="contact-item card">
+                        <div class="lava-drip"></div>
+                        <div class="contact-icon">📘</div>
+                        <div class="contact-info">
+                            <h4>Facebook</h4>
+                            <p>ศริตวรรธน์ ยศเดชากิตติ์</p>
+                        </div>
+                    </div>
+                    <div class="contact-item card">
+                        <div class="lava-drip"></div>
+                        <div class="contact-icon">📸</div>
+                        <div class="contact-info">
+                            <h4>Instagram</h4>
+                            <p>pang.za</p>
+                        </div>
+                    </div>
+                    <div class="contact-item card">
+                        <div class="lava-drip"></div>
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-info">
+                            <h4>Line ID / TikTok</h4>
+                            <p>ศริตวรรธน์</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Sarittawat Yotdechakit (Pangpond) - ม.3/2. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('click', function(e) {
+            const explosion = document.createElement('div');
+            explosion.className = 'magma-explosion';
+            explosion.style.left = (e.clientX - 50) + 'px';
+            explosion.style.top = (e.clientY - 50) + 'px';
+            document.body.appendChild(explosion);
+            
+            const phoenix = document.createElement('div');
+            phoenix.className = 'phoenix-bird';
+            phoenix.style.left = e.clientX + 'px';
+            phoenix.style.top = e.clientY + 'px';
+            document.body.appendChild(phoenix);
+
+            setTimeout(() => { explosion.remove(); }, 600);
+            setTimeout(() => { phoenix.remove(); }, 1500);
+        });
+    </script>
+</body>
+</html>
