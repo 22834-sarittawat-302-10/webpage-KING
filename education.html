@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Sarittawat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="video-background">
+        <iframe src="https://www.youtube.com/embed/rTtMtX2B9ps?autoplay=1&mute=1&loop=1&playlist=rTtMtX2B9ps&controls=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="screen-fire-border"></div>
+
+    <header>
+        <nav>
+            <div class="logo">PANGPOND<span>.FIRE</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html" class="active">การศึกษา</a></li>
+                <li><a href="hobby.html">งานอดิเรก</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="education-section">
+            <h2 class="section-title">Education <span>ประวัติการศึกษา</span></h2>
+            
+            <div class="timeline">
+                <div class="timeline-item card">
+                    <div class="lava-drip"></div>
+                    <div class="timeline-dot"></div>
+                    <h3>ระดับประถมศึกษา</h3>
+                    <h4>โรงเรียนศรีจอมทอง</h4>
+                    <p>จบการศึกษาระดับประถมศึกษาด้วยพื้นฐานที่ดี พร้อมก้าวสู่การเรียนรู้ที่ท้าทายขึ้น</p>
+                </div>
+                <div class="timeline-item card">
+                    <div class="lava-drip"></div>
+                    <div class="timeline-dot"></div>
+                    <h3>ระดับมัธยมศึกษาตอนต้น</h3>
+                    <h4>โรงเรียนจอมทอง (ปัจจุบัน)</h4>
+                    <p>กำลังศึกษาอยู่ชั้น ม.3/2 เกรดเฉลี่ยสะสม (GPAX): <strong>4.00</strong></p>
+                </div>
+                <div class="timeline-item card">
+                    <div class="lava-drip"></div>
+                    <div class="timeline-dot"></div>
+                    <h3>เป้าหมายอนาคต (ม.ปลาย)</h3>
+                    <h4>สายการเรียน: วิทย์-คณิต</h4>
+                    <p>มุ่งมั่นที่จะศึกษาต่อในสายวิทย์-คณิต เพื่อต่อยอดความรู้ด้านเทคโนโลยีและวิทยาศาสตร์</p>
+                </div>
+            </div>
+
+            <div class="edu-highlights">
+                <div class="highlight-card card">
+                    <div class="lava-drip"></div>
+                    <h3>วิชาที่ชอบ</h3>
+                    <p>📐 คณิตศาสตร์</p>
+                    <p>🔤 ภาษาอังกฤษ</p>
+                </div>
+                <div class="highlight-card card">
+                    <div class="lava-drip"></div>
+                    <h3>ผลการเรียน</h3>
+                    <h2 class="gpa">4.00</h2>
+                    <p>เกรดเฉลี่ยสะสม</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Sarittawat Yotdechakit (Pangpond) - ม.3/2. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('click', function(e) {
+            const explosion = document.createElement('div');
+            explosion.className = 'magma-explosion';
+            explosion.style.left = (e.clientX - 50) + 'px';
+            explosion.style.top = (e.clientY - 50) + 'px';
+            document.body.appendChild(explosion);
+            
+            const phoenix = document.createElement('div');
+            phoenix.className = 'phoenix-bird';
+            phoenix.style.left = e.clientX + 'px';
+            phoenix.style.top = e.clientY + 'px';
+            document.body.appendChild(phoenix);
+
+            setTimeout(() => { explosion.remove(); }, 600);
+            setTimeout(() => { phoenix.remove(); }, 1500);
+        });
+    </script>
+</body>
+</html>
