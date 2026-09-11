@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Sarittawat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="video-background">
+        <iframe src="https://www.youtube.com/embed/rTtMtX2B9ps?autoplay=1&mute=1&loop=1&playlist=rTtMtX2B9ps&controls=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="screen-fire-border"></div>
+
+    <header>
+        <nav>
+            <div class="logo">PANGPOND<span>.FIRE</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="profile.html" class="active">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html">การศึกษา</a></li>
+                <li><a href="hobby.html">งานอดิเรก</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <h2 class="section-title">Profile <span>ประวัติส่วนตัว</span></h2>
+            <div class="profile-container">
+                <div class="profile-left card">
+                    <div class="lava-drip"></div>
+                    <img src="https://www.khaosod.co.th/wpapp/uploads/2019/06/62216820_2484852834909243_7694992050374049792_n.jpg" alt="รูปโปรไฟล์ของฉัน">
+                    <h3>ปังปอนด์ (Pangpond)</h3>
+                    <p class="role">Front-end / Tech Enthusiast</p>
+                </div>
+                <div class="profile-right">
+                    <div class="info-card card">
+                        <div class="lava-drip"></div>
+                        <h3>เกี่ยวกับฉัน</h3>
+                        <p>ผมชื่อ ศริตวรรธน์ ยศเดชากิตติ์ (Sarittawat Yotdechakit) ปัจจุบันกำลังศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 3 มีความสนใจและหลงใหลในด้านเทคโนโลยีคอมพิวเตอร์และการออกแบบเว็บไซต์ ชอบเรียนรู้สิ่งใหม่ๆ และพัฒนาตัวเองอยู่เสมอ</p>
+                    </div>
+                    <div class="info-grid">
+                        <div class="info-box card">
+                            <div class="lava-drip"></div>
+                            <h4>ชื่อ-นามสกุล</h4>
+                            <p>ศริตวรรธน์ ยศเดชากิตติ์</p>
+                        </div>
+                        <div class="info-box card">
+                            <div class="lava-drip"></div>
+                            <h4>อายุ</h4>
+                            <p>14 ปี</p>
+                        </div>
+                        <div class="info-box card">
+                            <div class="lava-drip"></div>
+                            <h4>วันเกิด</h4>
+                            <p>28/03/2555</p>
+                        </div>
+                        <div class="info-box card">
+                            <div class="lava-drip"></div>
+                            <h4>จังหวัด</h4>
+                            <p>เชียงใหม่</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Sarittawat Yotdechakit (Pangpond) - ม.3/2. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('click', function(e) {
+            const explosion = document.createElement('div');
+            explosion.className = 'magma-explosion';
+            explosion.style.left = (e.clientX - 50) + 'px';
+            explosion.style.top = (e.clientY - 50) + 'px';
+            document.body.appendChild(explosion);
+            
+            const phoenix = document.createElement('div');
+            phoenix.className = 'phoenix-bird';
+            phoenix.style.left = e.clientX + 'px';
+            phoenix.style.top = e.clientY + 'px';
+            document.body.appendChild(phoenix);
+
+            setTimeout(() => { explosion.remove(); }, 600);
+            setTimeout(() => { phoenix.remove(); }, 1500);
+        });
+    </script>
+</body>
+</html>
