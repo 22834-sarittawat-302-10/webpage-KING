@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies - Sarittawat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="video-background">
+        <iframe src="https://www.youtube.com/embed/rTtMtX2B9ps?autoplay=1&mute=1&loop=1&playlist=rTtMtX2B9ps&controls=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="screen-fire-border"></div>
+
+    <header>
+        <nav>
+            <div class="logo">PANGPOND<span>.FIRE</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="profile.html">ประวัติส่วนตัว</a></li>
+                <li><a href="education.html">การศึกษา</a></li>
+                <li><a href="hobby.html" class="active">งานอดิเรก</a></li>
+                <li><a href="contact.html">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hobby-section">
+            <h2 class="section-title">Hobbies & Interests <span>งานอดิเรกและความสนใจ</span></h2>
+            
+            <div class="hobby-grid">
+                <div class="hobby-card card">
+                    <div class="lava-drip"></div>
+                    <div class="hobby-icon">🎮</div>
+                    <h3>เล่นเกม (ROBLOX)</h3>
+                    <p>ผ่อนคลายและฝึกจินตนาการไปกับการเล่นและสร้างสรรค์สิ่งต่างๆ ใน ROBLOX</p>
+                </div>
+                <div class="hobby-card card">
+                    <div class="lava-drip"></div>
+                    <div class="hobby-icon">🎵</div>
+                    <h3>ฟังเพลง</h3>
+                    <p>เพลงโปรดคือ "Marry on a cross" ช่วยสร้างแรงบันดาลใจและสมาธิ</p>
+                </div>
+                <div class="hobby-card card">
+                    <div class="lava-drip"></div>
+                    <div class="hobby-icon">💻</div>
+                    <h3>เขียนโค้ด / เทคโนโลยี</h3>
+                    <p>ชอบศึกษาการทำงานของ GitHub และติดตามข่าวสารเทคโนโลยีใหม่ๆ</p>
+                </div>
+                <div class="hobby-card card">
+                    <div class="lava-drip"></div>
+                    <div class="hobby-icon">⚽</div>
+                    <h3>เล่นกีฬา (ฟุตบอล)</h3>
+                    <p>ออกกำลังกายเพื่อสุขภาพที่แข็งแรง ชอบเล่นฟุตบอลกับเพื่อนๆ</p>
+                </div>
+                <div class="hobby-card card">
+                    <div class="lava-drip"></div>
+                    <div class="hobby-icon">📷</div>
+                    <h3>ถ่ายภาพ</h3>
+                    <p>ชอบถ่ายภาพบรรยากาศธรรมชาติที่สวยงามในจังหวัดเชียงใหม่</p>
+                </div>
+                <div class="hobby-card card">
+                    <div class="lava-drip"></div>
+                    <div class="hobby-icon">📚</div>
+                    <h3>อ่านหนังสือ</h3>
+                    <p>อ่านหนังสือเกี่ยวกับการพัฒนาตนเองและเทคโนโลยีเพื่ออัปสกิลให้ตัวเอง</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Sarittawat Yotdechakit (Pangpond) - ม.3/2. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('click', function(e) {
+            const explosion = document.createElement('div');
+            explosion.className = 'magma-explosion';
+            explosion.style.left = (e.clientX - 50) + 'px';
+            explosion.style.top = (e.clientY - 50) + 'px';
+            document.body.appendChild(explosion);
+            
+            const phoenix = document.createElement('div');
+            phoenix.className = 'phoenix-bird';
+            phoenix.style.left = e.clientX + 'px';
+            phoenix.style.top = e.clientY + 'px';
+            document.body.appendChild(phoenix);
+
+            setTimeout(() => { explosion.remove(); }, 600);
+            setTimeout(() => { phoenix.remove(); }, 1500);
+        });
+    </script>
+</body>
+</html>
